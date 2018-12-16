@@ -34,7 +34,7 @@ func main() {
 	userName = string([]rune(userName)[0 : utf8.RuneCountInString(userName)-5])
 
 	personalities, _ := detectTextURI(imgURL)
-	sendToSheet(userName, mgramURL, "https://script.google.com/macros/s/AKfycbyl5Axg2jzjlGJuh8WRJApbcVqKDTBR4lUxGBQ09mqm3DIxawEr/exec", personalities)
+	sendToSheet(userName, mgramURL, "GASのURL", personalities)
 }
 
 func detectTextURI(imgURL string) (personalities []string, err error) {
